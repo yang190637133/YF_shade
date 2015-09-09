@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>遮罩控件</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script  type="text/javascript" src="js/yf-shade-layer.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/demo.css" />
+    <script type="text/javascript">
+        $(function(){
+
+            $("#text1").shadeLayer({
+                z_index:999,
+                opacity:0.7,
+                color:'#1e1d1e'
+            });
+
+            $("#text3").shadeLayer({
+                z_index:999,
+                opacity:0.7,
+                color:'#54a9ff'
+            });
+
+            $("#text4").shadeLayer({
+                z_index:999,
+                opacity:1,
+                color:'#54a9ff'
+            });
+
+            var sub_html = "<p>这里是html内容</p>";
+            $("#text5").shadeLayer({
+                z_index:999,
+                opacity:0.5,
+                color:'#61f0e0',
+                context:{
+                    width:'60px',
+                    height:'60px',
+                    text:sub_html
+                }
+            });
+
+            var sub_html1 = "<p>这里是html内容</p>";
+            $("#text6").shadeLayer({
+                z_index:999,
+                opacity:0.5,
+                color:'#69c8c3',
+                context:{
+                    width:'50%',
+                    height:'50%',
+                    top:'110px',
+                    text:sub_html1
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+<div>
+<div id="text1" class="demo_text">被遮住的内容</div>
+<div id="text2" class="demo_text">测试内容</div>
+<div id="text3" class="demo_text">测试内容</div>
+<div id="text4" class="demo_text">被遮住的内容</div>
+<div id="text5" class="demo_text">测试内容</div>
+<div id="text6" class="demo_text">被遮住的内容</div>
+</div>
+
+</body>
+</html>

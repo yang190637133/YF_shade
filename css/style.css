@@ -1,0 +1,21 @@
+.shade_describe{
+    width:600px;
+    border: 3px solid #41a4df;
+    border-radius: 25px;
+    background: #100d08;
+    padding:25px;
+}
+
+.shade_describe p{
+    color: #fff8f1;
+}
+
+.shade_describe p .orange{
+    color: #ff7600;
+}
+.shade_describe p .blue{
+    color: #53bee0;
+}
+.shade_describe p .green{
+    color: #4cb88a;
+}
