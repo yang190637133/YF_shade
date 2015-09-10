@@ -2,7 +2,7 @@
 
 遮罩层控件
 
-页面引入 jowto-mask-layer.js
+页面引入 yf-shade-layer.js
 
 demo
 
@@ -10,7 +10,7 @@ demo
 
 添加遮罩层
 
-$(divId).jowtoLayer({<br>
+$(divId).shadeLayer({<br>
 &ensp;      z_index:999,<br>
 &ensp;      opacity:'.7',<br>
 &ensp;      color:'#EF7416',<br>
@@ -19,7 +19,7 @@ $(divId).jowtoLayer({<br>
 &ensp;      }<br>
 });<br>
 
-$(divId).jowtoLayer({<br>
+$(divId).shadeLayer({<br>
 &ensp;      z_index:999,<br>
 &ensp;      opacity:'.7',<br>
 &ensp;      context:{<br>
@@ -53,13 +53,13 @@ callback 加载遮罩层后的回调函数<br>
 
 清除遮罩层
 
-$(divId).jowtoLayer('clear',function(){<br>
+$(divId).shadeLayer('clear',function(){<br>
 &ensp;      console.dir('取消了');<br>
 });<br>
-$(divId).jowtoLayer('clear');<br>
+$(divId).shadeLayer('clear');<br>
 
 
 清除所有的遮罩层
-$(.widget-mask-layer).jowtoLayer('clear');<br>
+$(.yf-shade-layer).shadeLayer('clear');<br>
 
 function 是取消遮罩层的回调方法
